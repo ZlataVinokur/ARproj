@@ -15,7 +15,7 @@ public class ArButton : MonoBehaviour
 
     public void Initialize(Item config)
     {
-        _title.text = config.Title;
+        _title.text = config.Title +'\n'+ config.Price;
         _prefab = config.Prefab;
 
         _interactable.OnClick.AddListener(ProcessClick);
@@ -24,5 +24,11 @@ public class ArButton : MonoBehaviour
     private void ProcessClick()
     {
         OnButtonClicked?.Invoke();
+        SpawnItem();
+    }
+
+    public void SpawnItem()
+    {
+        Instantiate(_prefab, new Vector3(0, 0, 0), Quaternion.identity);
     }
 }

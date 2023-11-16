@@ -7,6 +7,7 @@ TagManager:
   - lava
   - FxTemporaire
   - flower
+  - Animal
   layers:
   - Default
   - TransparentFX

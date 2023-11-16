@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: New Items Config
   m_EditorClassIdentifier: 
   Items:
-  - Title: 
-    Prefab: {fileID: 0}
+  - Title: "\u0417\u0435\u043B\u044C\u0435 \u043B\u0435\u0447\u0435\u043D\u0438\u044F"
+    Prefab: {fileID: 8236275603255780841, guid: 56cfdba17cdde4644b3b7ed47ea9236b, type: 3}
     Price: 100
-  - Title: 
-    Prefab: {fileID: 0}
+  - Title: "\u0417\u0435\u043B\u044C\u0435 \u0441\u043D\u0430"
+    Prefab: {fileID: 1314764253870217258, guid: 4aaeea0d1bbc3c8489f116eee4958e9d, type: 3}
+    Price: 300
+  - Title: "\u041A\u043E\u0440\u043E\u0431\u043A\u0430"
+    Prefab: {fileID: 949307794707751532, guid: 9225d87551b9f734abc826ca0e53def2, type: 3}
     Price: 500
