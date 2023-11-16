@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7490912416387327915, guid: 56cfdba17cdde4644b3b7ed47ea9236b, type: 3}
+      propertyPath: healParticles
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 966054769003805122, guid: 56cfdba17cdde4644b3b7ed47ea9236b, type: 3}
       propertyPath: hostTransform
       value: 
@@ -21,7 +25,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 6374765a4b9f23e47831b7e02c0eb53e, type: 2}
     - target: {fileID: 8236275603255780841, guid: 56cfdba17cdde4644b3b7ed47ea9236b, type: 3}
       propertyPath: m_Name
-      value: Red Potion Variant 1
+      value: Violet Potion Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8239649526871639083, guid: 56cfdba17cdde4644b3b7ed47ea9236b, type: 3}
       propertyPath: m_RootOrder
@@ -67,7 +71,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7490912416387327915, guid: 56cfdba17cdde4644b3b7ed47ea9236b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 56cfdba17cdde4644b3b7ed47ea9236b, type: 3}
 --- !u!4 &1309078061617019368 stripped
 Transform:
@@ -79,6 +84,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8236275603255780841, guid: 56cfdba17cdde4644b3b7ed47ea9236b, type: 3}
   m_PrefabInstance: {fileID: 6950138453004008899}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &-4213562395738050796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314764253870217258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1221d85d14d5d73419af2bfca1d076fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sleepParticles: {fileID: 0}
+  _timerEnd: 15
+  _timerValue: 0
+  _sleepPotActivated: 0
 --- !u!114 &394685871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,6 +114,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
   IsBoundsHandles: 0
+--- !u!114 &7396858568196733190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314764253870217258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa7fc6966da1ba7489d9f05f28fb2e2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sleepParticles: {fileID: 198681264470032530, guid: aa8d6482d70a23445b4b2a928ed1b845, type: 3}
 --- !u!114 &5335475906517204383 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -6162981437901717412, guid: 56cfdba17cdde4644b3b7ed47ea9236b, type: 3}
