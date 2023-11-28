@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Potion Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1312144501901774, guid: bdff4121f43153443915c39b7b0b1a6a, type: 3}
+      propertyPath: m_TagString
+      value: HealPotion
+      objectReference: {fileID: 0}
     - target: {fileID: 4668473293580300, guid: bdff4121f43153443915c39b7b0b1a6a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -62,19 +66,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1312144501901774, guid: bdff4121f43153443915c39b7b0b1a6a, type: 3}
   m_PrefabInstance: {fileID: 8235263362987519015}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &-7490912416387327915
-MonoBehaviour:
+--- !u!136 &-5994234384328713917
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8236275603255780841}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b55fb7f359a2b44eb8787a970413fd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healParticles: {fileID: 19800004, guid: 3af6f68141914ca43ba39b2403757bd0, type: 3}
+  m_Radius: 0.22
+  m_Height: 0.58
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.04, z: 0}
 --- !u!114 &-6162981437901717412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,6 +94,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoConstraintSelection: 1
   selectedConstraints: []
+--- !u!114 &-2270648877257982086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8236275603255780841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5afd5316c63705643b3daba5a6e923bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTetherWhenManipulating: 0
+  IsBoundsHandles: 0
 --- !u!114 &966054769003805122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,7 +123,7 @@ MonoBehaviour:
   hostTransform: {fileID: 8239649526871639083}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1

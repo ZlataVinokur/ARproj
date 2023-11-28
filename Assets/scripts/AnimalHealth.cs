@@ -9,24 +9,29 @@ public class AnimalHealth : MonoBehaviour
     [SerializeField] public int _health;
     [Header("Unity Setup")]
     public ParticleSystem deathParticles;
+    public ParticleSystem painParticles;
+    public ParticleSystem healParticles;
     [SerializeField] private float _coolDown;
     private float _timer;
     public bool CanTakeDamage { get; private set; }
+    public FrozLava lavaMaterial;
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "lava")
+        if (other.tag == "lava" && lavaMaterial.frLavaMaterial.color==Color.white)
         {
             TakeDamage(1);
         }
+        else { TakeDamage(0); }
     }
     
 
     public void TakeDamage(int damage)
     {
-        if (CanTakeDamage)
+        if (CanTakeDamage && damage!=0)
         {
             _health -= damage;
+            Instantiate(painParticles, transform.position, Quaternion.identity);
             CanTakeDamage = false;
         }
         
@@ -59,6 +64,20 @@ public class AnimalHealth : MonoBehaviour
         }
         CanTakeDamage = true;
         _timer = 0;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "HealPotion")
+        {
+            if (_health > 0 && _health < 15)
+            {
+                TakeHeal(15);
+                Instantiate(healParticles, transform.position, Quaternion.identity);
+                Destroy(other.gameObject);
+            }
+            
+        }
     }
 
     public void TakeHeal(int heal)

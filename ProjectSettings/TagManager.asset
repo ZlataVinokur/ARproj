@@ -8,6 +8,9 @@ TagManager:
   - FxTemporaire
   - flower
   - Animal
+  - Potion
+  - FrozPotion
+  - HealPotion
   layers:
   - Default
   - TransparentFX

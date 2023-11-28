@@ -1,20 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
-public class FindFlower : MonoBehaviour
+public class P1 : MonoBehaviour
 {
-
     [SerializeField] public Transform target;
     public float speed = 1;
-    public SleepPotTimer timerOfSleeping;
-
-    [Header("Unity Setup")]
-    public ParticleSystem sleepParticles;
-
+    public timerSh timerOfShield;
+    
     void Start()
     {
-
+        
     }
 
     void Update()
@@ -29,12 +26,10 @@ public class FindFlower : MonoBehaviour
     {
         if (other.tag == "Potion")
         {
-            timerOfSleeping.gameObject.SetActive(true);
-            timerOfSleeping.isCoolDown = true;
+            timerOfShield.gameObject.SetActive(true);
+            timerOfShield.isCoolDawn = true;
             speed = 0;
-            Instantiate(sleepParticles, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
         }
     }
-
 }

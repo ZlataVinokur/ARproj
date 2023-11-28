@@ -5,6 +5,7 @@ using UnityEngine;
 using static UnityEditor.Experimental.GraphView.GraphView;
 using UnityEngine.UIElements;
 using static UnityEngine.GraphicsBuffer;
+using System;
 
 public class SleepPotion : MonoBehaviour
 {
@@ -13,28 +14,19 @@ public class SleepPotion : MonoBehaviour
     [Header("Unity Setup")]
     public ParticleSystem sleepParticles;
     
+    /*назейр2.GetComponent<ScriptName>().SetBoolean(BOOLEAN);*/
 
     private void Start()
     {
-        _moving = FindObjectOfType<FindFlower>();
-        _sleeptime = FindObjectOfType<SleepTimer>();
+       
+        
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Animal")
         {
-            DoSleeping();
-            _sleeptime._sleepPotActivated = true;
+            Destroy();
         }
-    }
-
-    public void DoSleeping()
-    {
-        while (_sleeptime._sleepPotActivated == true)
-        {
-            _moving.speed = 0;
-        }
-        Destroy();
     }
 
     private void Destroy()

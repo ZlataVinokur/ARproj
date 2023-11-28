@@ -6,14 +6,14 @@ public class SleepTimer : MonoBehaviour
 {
     private FindFlower _moving;
     [Header("Unity Setup")]
-    public ParticleSystem sleepParticles;
-    [SerializeField] public float _timerEnd;
+    public float _timerEnd;
     [SerializeField] private float _timerValue=0;
-    public bool _sleepPotActivated = false;
+    public bool _sleepPotActivated;
 
     private void Start()
     {
         _moving = FindObjectOfType<FindFlower>();
+        SetBoolean(false);
     }
     
 
@@ -24,10 +24,15 @@ public class SleepTimer : MonoBehaviour
             _timerValue += Time.deltaTime;
             if (_timerValue >= _timerEnd)
             {
-                _sleepPotActivated = false;
+                SetBoolean(false);
                 _timerValue = 0;
             }
         }
 
+    }
+
+    public void SetBoolean (bool BOOLEAN)
+    {
+        _sleepPotActivated = BOOLEAN;
     }
 }

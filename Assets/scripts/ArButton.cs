@@ -29,6 +29,6 @@ public class ArButton : MonoBehaviour
 
     public void SpawnItem()
     {
-        Instantiate(_prefab, new Vector3(0, 0, 0), Quaternion.identity);
+        Instantiate(_prefab, transform.position - new Vector3(0.3f, 0.3f), Quaternion.identity);
     }
 }
