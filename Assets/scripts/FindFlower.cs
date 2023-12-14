@@ -23,6 +23,9 @@ public class FindFlower : MonoBehaviour
 
         // Переместите нашу позицию на шаг ближе к цели.
         transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+
+        if (timerOfSleeping.isCoolDown == false)
+                speed = 1;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -35,6 +38,7 @@ public class FindFlower : MonoBehaviour
             Instantiate(sleepParticles, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
         }
+        
     }
 
 }
