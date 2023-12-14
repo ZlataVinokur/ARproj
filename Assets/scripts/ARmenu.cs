@@ -1,8 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Microsoft.MixedReality.Toolkit.Utilities;
-using UnityEditor.XR.ARSubsystems;
 
 public partial class ARmenu : MonoBehaviour
 {
