@@ -22,15 +22,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4668473293580300, guid: bdff4121f43153443915c39b7b0b1a6a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.7
+      value: 0.1573212
       objectReference: {fileID: 0}
     - target: {fileID: 4668473293580300, guid: bdff4121f43153443915c39b7b0b1a6a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.7
+      value: 0.1573212
       objectReference: {fileID: 0}
     - target: {fileID: 4668473293580300, guid: bdff4121f43153443915c39b7b0b1a6a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.7
+      value: 0.1573212
       objectReference: {fileID: 0}
     - target: {fileID: 4668473293580300, guid: bdff4121f43153443915c39b7b0b1a6a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -164,7 +164,7 @@ MonoBehaviour:
   hostTransform: {fileID: 8239649526871639083}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1

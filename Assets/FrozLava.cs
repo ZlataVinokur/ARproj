@@ -7,13 +7,13 @@ public class FrozLava : MonoBehaviour
     public LavaTimer timerOfFrozLava;
     [SerializeField] public Material frLavaMaterial;
 
-
     [Header("Unity Setup")]
     public ParticleSystem frozeParticles;
 
     void Start()
     {
         frLavaMaterial.color = Color.white;
+        
     }
 
     // Update is called once per frame

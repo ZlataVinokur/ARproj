@@ -21,9 +21,9 @@ public class Healing : MonoBehaviour
     }
     public void DoHealing()
     {
-        if (_animal._health > 0 && _animal._health < 15)
+        if (_animal._health > 0 && _animal._health < 20)
         {
-            _animal.TakeHeal(15);
+            _animal.TakeHeal(20);
             Destroy();
         }
     }

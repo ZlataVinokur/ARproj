@@ -11,6 +11,8 @@ public class ArButton : MonoBehaviour
     [SerializeField] private TextMeshPro _title;
     [SerializeField] private Interactable _interactable;
 
+    //[SerializeField] private Transform currentTarget;
+
     private GameObject _prefab;
 
     public void Initialize(Item config)
@@ -29,6 +31,6 @@ public class ArButton : MonoBehaviour
 
     public void SpawnItem()
     {
-        Instantiate(_prefab, transform.position - new Vector3(0.3f, 0.3f), Quaternion.identity);
+        Instantiate(_prefab, transform.position , Quaternion.identity);
     }
 }

@@ -9,6 +9,8 @@ public class LavaTimer : MonoBehaviour
     public float _timerEndLava;
     [SerializeField] private float _timerValueLava = 0;
 
+    [SerializeField] public Material frLavaMaterial1;
+
     private FrozLava _lavaMaterial;
 
     void Start()
@@ -25,7 +27,7 @@ public class LavaTimer : MonoBehaviour
             if (_timerValueLava >= _timerEndLava)
             {
                 isCoolDownLava = false;
-                _lavaMaterial.frLavaMaterial.color = Color.white;
+                frLavaMaterial1.color = Color.white;
                 ResetTimer();
 
             }

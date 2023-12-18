@@ -11,6 +11,8 @@ TagManager:
   - Potion
   - FrozPotion
   - HealPotion
+  - Ground
+  - Air
   layers:
   - Default
   - TransparentFX
