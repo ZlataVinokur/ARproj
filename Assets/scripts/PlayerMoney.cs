@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMoney : MonoBehaviour
 {
-    [SerializeField] private int _moneyAmount;
+    [SerializeField] public int _moneyAmount;
 
     public void ProcessBuy(int money)
     {
