@@ -21,4 +21,5 @@ public class PlayerMoney : MonoBehaviour
     {
         return _moneyAmount - price >= 0;
     }
+
 }
