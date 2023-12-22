@@ -322,7 +322,7 @@ Transform:
   m_GameObject: {fileID: 71036033}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.014800103, y: -0.06309986, z: -0}
+  m_LocalPosition: {x: 0.014800103, y: -0.0605, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2252,7 +2252,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0209, y: -0.0711}
+  m_AnchoredPosition: {x: 0.0209, y: -0.077}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &259564491
@@ -2338,7 +2338,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0.6378088, y: -2.3915567, z: 13.551188, w: 1.4127992}
+  m_margin: {x: -0.6378088, y: -2.3915567, z: 13.551188, w: 3.5087225}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -10208,7 +10208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1276800631, guid: 4eb9e2123dbfcff45b11cef1b35efcd5, type: 3}
       propertyPath: speed
-      value: 0.3
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1276800631, guid: 4eb9e2123dbfcff45b11cef1b35efcd5, type: 3}
       propertyPath: target
@@ -12795,7 +12795,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1276800631, guid: 4eb9e2123dbfcff45b11cef1b35efcd5, type: 3}
       propertyPath: speed
-      value: 0.3
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1276800631, guid: 4eb9e2123dbfcff45b11cef1b35efcd5, type: 3}
       propertyPath: target
@@ -15289,7 +15289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1276800631, guid: 4eb9e2123dbfcff45b11cef1b35efcd5, type: 3}
       propertyPath: speed
-      value: 0.3
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1276800631, guid: 4eb9e2123dbfcff45b11cef1b35efcd5, type: 3}
       propertyPath: target
@@ -16869,7 +16869,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4650336335911306619}
-  - component: {fileID: 4650336335911306620}
   m_Layer: 0
   m_Name: MenuContent
   m_TagString: Untagged
@@ -16897,19 +16896,6 @@ Transform:
   - {fileID: 1599930391}
   m_Father: {fileID: 4650336336607388426}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4650336335911306620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4650336335911306618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92cc85ac296c0944daa3d61833cdf5bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _textMeshPro: {fileID: 1988705245}
 --- !u!1 &4650336336607388425
 GameObject:
   m_ObjectHideFlags: 0

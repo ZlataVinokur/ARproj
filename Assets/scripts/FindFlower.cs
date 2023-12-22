@@ -6,7 +6,7 @@ public class FindFlower : MonoBehaviour
 {
 
     [SerializeField] public Transform target;
-    public float speed = 0.3f;
+    public float speed = 0.2f;
     public SleepPotTimer timerOfSleeping;
 
     [Header("Unity Setup")]
@@ -27,7 +27,7 @@ public class FindFlower : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, target.position, step);
 
         if (timerOfSleeping.isCoolDown == false && isOnGround==true)
-                speed = 0.3f;
+                speed = 0.2f;
         if (isOnGround == false)
         {
             speed = 0;
@@ -57,21 +57,5 @@ public class FindFlower : MonoBehaviour
         }
         else isOnGround = true;
     }
-
-    /*private void OnTriggerStay(Collider other)
-    {
-        if (other.tag == "Ground" || other.tag == "lava")
-        {
-            isOnGround = true;
-            
-        }
-
-        else
-        {
-            isOnGround = false;
-            
-        }
-        Debug.Log("aaa");
-    }*/
 
 }
